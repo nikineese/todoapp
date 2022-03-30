@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    font-family: Josefin Sans, sans-serif ;
+}
+body{
+    background: hsl(235, 21%, 11%) url(bg-desktop-dark.jpg) no-repeat ;
+    background-size: 100% 350px;
+}
+.hide{
+    display: none;
+}
+.blue{
+    color: hsl(220, 98%, 61%)!important;
+
+}
+.bg-img{
+    position: absolute;
+    width: 1440px;
+    height: 300px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 600px;
+    margin: 100px auto 0 auto;
+}
+.container__header{
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container__title{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 42px;
+}
+.app{
+    z-index: 5;
+}
+.app__list{
+    background-color: hsl(235, 24%, 19%) ;
+    color:  hsl(233, 14%, 35%);
+    border-radius: 5px;
+}
+.app__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.app__choose{
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.filter{
+    color:  hsl(233, 14%, 35%);
+    font-weight: bold;
+    transition: 0.12s linear color;
+}
+.clr-completed{
+    transition: 0.12s linear color;
+}
+.footer-text{
+    text-align: center;
+    color: hsl(233, 14%, 35%);
+}
+.app__choose a:hover, .clr-completed:hover{
+    color: hsl(236, 33%, 92%);
+    cursor: pointer;
+}
+.app__enter{
+    margin-bottom: 40px;
+    background-color: hsl(235, 24%, 19%) ;
+    color:  hsl(233, 14%, 35%);
+    border-radius: 5px;
+}
+.enter{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 70px;
+}
+.enter-text{
+    background: transparent;
+    border: none;
+    width: 80%;
+    height: 50%;
+    padding-top: 5px;
+    color: hsl(234, 39%, 85%);
+    font-size: 18px;
+}
+.enter-text { --placeholder: hsl(233, 14%, 35%)}
+.enter-text::placeholder{
+    color: var(--placeholder);
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    height: 70px;
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+.left-part{
+    display: flex;
+    align-items: center;
+}
+.radio{
+    border: 2px solid hsl(233, 14%, 35%);
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.05s linear all;
+}
+.radio {
+    --background: linear-gradient(hsl(235, 24%, 19%),hsl(235, 24%, 19%) ) , linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.radio:hover{
+    border: double 2px transparent;
+    border-radius: 80px;
+    background-image: var(--background);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
+
+.name{
+    display: inline-flex;
+    padding-top: 2px;
+    font-size: 18px;
+    color: hsl(234, 39%, 85%);
+    cursor: pointer;
+}
+.name:hover{
+    color: hsl(236, 33%, 92%);
+}
+.delete{
+    opacity: 0;
+    cursor: pointer;
+}
+.delete:hover{
+    opacity: 100;
+}
+.btn-switch-theme{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.confirm{
+    background: url("icon-check.svg") no-repeat center , linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+}
